@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpeechTranslation.App.Views.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout Spacing="10" x:Name="layout" Padding="0,0,0,0" LayoutChanged="layout_LayoutChanged">
+
+        <Picker 
+            x:Name="RecordingLanguagesPicker"
+            Title="Select language"
+            TitleColor="White"
+            TextColor="White"
+            ItemsSource="{Binding RecordingLanguages}" 
+            ItemDisplayBinding="{Binding Name}"
+            SelectedItem="{Binding SelectedRecordingLanguage}"
+            PropertyChanged="RecordingLanguagesPicker_PropertyChanged" />
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="EnableMicrophoneButton"
+                Text="Enable mic"
+                HorizontalOptions="FillAndExpand"
+                Clicked="OnEnableMicrophoneButtonClicked" />
+
+            <Button x:Name="RecognitionButton"
+                Text="Start"
+                HorizontalOptions="FillAndExpand"
+                Clicked="OnRecognitionButtonClicked" />
+
+            <Button x:Name="StopRecognitionButton"
+                Text="Stop"
+                HorizontalOptions="FillAndExpand"
+                Clicked="StopRecognitionButton_Clicked" />
+        </StackLayout>
+
+        <ScrollView x:Name="RecognizedText_ScrollView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label x:Name="RecognizedText"  
+               Text=""
+               TextColor="White"
+               FontSize="Large" />
+        </ScrollView>
+
+        <BoxView Color="White" WidthRequest="100" HeightRequest="1"/>
+
+        <Label x:Name="RecognizingText" 
+               Text=""
+               TextColor="White"
+               FontSize="Large"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>
