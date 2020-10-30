@@ -1,5 +1,5 @@
 # SpeechTranslation mobile app
-Alpha version of a mobile app which can generate translated subtitles for any audio source.
+Alpha (PoC) version of a mobile app which can generate translated subtitles for any audio source.
 Currently configured for Chinese, Japanese and Korean. 
 
 ## Getting started
