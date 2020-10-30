@@ -21,4 +21,8 @@ To use the app in the  Android emulator, do the following:
 4. Click *Stop* to stop listening to audio (which will also stop Azure Speech consumption).
 
 ## Known issues
-The app is currently only tested on Android Emulator, but could technically also work on iOS (although untested).
+- The app is currently only tested on Android Emulator, but could technically also work on iOS (although untested).
+
+## To do
+- Optimize the currently very poor user experience
+- Fix some bugs
