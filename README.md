@@ -1,5 +1,5 @@
 # SpeechTranslation mobile app
-Mobile app which can generate translated subtitles for any audio source. 
+Mobile app which can generate translated subtitles for any audio source, in this v0.1 only supports Android (no iOS device available to test).
 Currently configured for Chinese, Japanese and Korean. 
 
 ## Getting started
