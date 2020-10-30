@@ -1,4 +1,4 @@
-# SpeechTranslation mobile app
+# Live translation mobile app
 Alpha (PoC) version of a mobile app that can generate translated subtitles for any live audio source, using Azure Speech service.
 In the PoC, this is currently configured for Chinese, Japanese and Korean. 
 
